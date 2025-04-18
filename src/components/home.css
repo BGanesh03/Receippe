@@ -1,0 +1,24 @@
+.search{
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+input{
+    width: 70%;
+    border: 1px solid;
+    height: 30px;
+    border-radius: 18px;
+    padding-left: 20px;
+    
+}
+
+.feed{
+    /* display: flex;
+    flex-direction: row; */
+    /* padding-left: 10px; */
+    /* margin-right: 400px; */
+}
+
+/* input::placeholder{
+    padding-left: 13px;
+} */

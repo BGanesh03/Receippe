@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+  flex-direction: row;
+  background: #BE93C5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7BC6CC, #BE93C5);
+    height: 70px;
+   width: 100%;
+   padding:10px;
+}
+
+#img{
+    width: 75px;
+    height:50px;
+    margin-left: auto;
+    margin-top: 0px;
+    border-radius: 34%;
+}

@@ -1,0 +1,159 @@
+.main{
+    display: flex;
+    /* align-items: center; */
+    margin-left: 24%;
+    /* text-align: center; */
+    width: 50%;
+}
+
+.image{
+    flex: 1;
+    margin-top: 20px;
+    height: 250px;
+    /* background-color: rgb(250, 250, 250); */
+}
+.desc {
+    flex: 1;
+    margin-top: 15px;
+    padding-left: 20px;
+    height: 250px;
+    /* background: linear-gradient(to right, #7BC6CC, #BE93C5); */
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .ingredients-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between badges */
+    margin-top: 10px;
+    /* padding: 10px; */
+  }
+  
+  .ingredients-container span{
+        padding: 5px 10px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Round corners for badges */
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;  /* Text color */
+    text-transform: capitalize;
+  }
+  
+  .bg-red-100 {
+    background-color: #fee2e2;
+  }
+  
+  .text-red-800 {
+    color: #9b1c1c;
+  }
+  
+  .bg-yellow-100 {
+    background-color: #fef3c7;
+  }
+  
+  .text-yellow-800 {
+    color: #9a6e00;
+  }
+  
+  .bg-green-100 {
+    background-color: #d1fae5;
+  }
+  
+  .text-green-800 {
+    color: #047857;
+  }
+  
+  .bg-blue-100 {
+    background-color: #bfdbfe;
+  }
+  
+  .text-blue-800 {
+    color: #1e3a8a;
+  }
+  
+  .bg-purple-100 {
+    background-color: #f3e8ff;
+  }
+  
+  .text-purple-800 {
+    color: #6b21a8;
+  }
+  
+  .bg-pink-100 {
+    background-color: #f9a8d4;
+  }
+  
+  .text-pink-800 {
+    color: #9d174d;
+  }
+  
+  .bg-indigo-100 {
+    background-color: #e0e7ff;
+  }
+  
+  .text-indigo-800 {
+    color: #3730a3;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f3f4f6;
+  }
+  
+  .text-gray-800 {
+    color: #1f2937;
+  }
+  
+
+.feedima{
+    padding-top: 10px;
+    margin-left: 10px ;
+    height: 183px;
+    width: 200px;
+    border-radius: 10%;
+}
+
+.head{
+    /* background-color: rgb(251, 247, 253); */
+    height: 30px;
+    /* width: 0%; */
+    display: flex;
+    flex-direction: row;
+}
+.userima{
+    border-radius: 30%;
+    background-size: cover;
+    margin-top: 6px;
+    margin-left: 9px;
+    width: 50px;
+    height:30px;
+}
+.user{
+    margin: 6.5px;
+    /* margin-top: 8px; */
+}
+.like{
+    /* background-color: rgb(251, 247, 253); */
+    /* background-color: rgb(219, 195, 230); */
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 33px;
+    /* width: 100%; */
+    /* align-items: center; */
+    /* border-radius: 10px; */
+    /* padding-left: 20px; */
+}
+
+ul {
+    list-style-type: none;
+    padding-top: 10px;
+  }
+  

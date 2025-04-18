@@ -1,0 +1,81 @@
+/* h1{
+    text-align: center;
+} */
+
+.container{
+    display: flex;
+    flex-direction: row;
+    /* box-sizing: border-box; */
+    /* background:linear-gradient(90deg,rgb(158, 158, 245),rgb(243, 174, 186));
+     */
+     background: #BE93C5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
+  
+  }
+  .input {
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      gap: 10px;
+      margin-left: auto;
+      margin-top:80px;
+      margin-left:30px ;
+  
+  
+      position:realative ;
+    
+      padding: 30px;
+      /* background:linear-gradient(90deg,rgb(158, 158, 245),rgb(243, 174, 186)); */
+      /* background-color:  */
+      background: #ddd6f3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcc3c0, #cabbf9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f4c5c2, #c5b7f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      
+      width: 350px;
+      height:280px;
+    }
+    
+    .link-button {
+      color: blue;
+      cursor: pointer;
+      text-decoration: underline;
+    
+      /* Optional button-like styling */
+      /* padding: 8px 16px; */
+      /* border: none; */
+      /* background-color: transparent;    */
+      /* font-size: 14px; */
+      /* border-radius: 5px; */
+      /* transition: background-color 0.3s; */
+    }
+  
+    .link-button:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  
+    .forget {
+      display: flex;
+      justify-content: center; /* center all items horizontally */
+      align-items: center;      /* align vertically */
+      gap: 5px;                /* spacing between items */
+      margin-top: 20px;
+    }
+    
+    .animation{
+      width:500px;
+      height:450px;
+      /* margin-top:10px; */
+      margin-bottom:50px;
+      right:0;
+      /* border: 10px solid black; */
+      margin-left:0;
+    }
+  
+  
