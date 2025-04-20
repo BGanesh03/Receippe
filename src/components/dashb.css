@@ -1,0 +1,25 @@
+.dash {
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 80%;
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(156, 155, 155);
+    padding: 0;
+    z-index: 100;
+  }
+  
+
+  li {
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    background-color: #f1e7e7;
+  }

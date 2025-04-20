@@ -1,12 +1,14 @@
 .header{
     display: flex;
   flex-direction: row;
-  background: #BE93C5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #7BC6CC, #BE93C5);
+  /* background: #BE93C5; 
+  background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5); 
+  background: linear-gradient(to right, #7BC6CC, #BE93C5); */
+  background-color: rgb(156, 155, 155);
     height: 70px;
    width: 100%;
    padding:10px;
+   /* position: static; */
 }
 
 #img{
@@ -15,4 +17,5 @@
     margin-left: auto;
     margin-top: 0px;
     border-radius: 34%;
+    cursor: pointer;
 }

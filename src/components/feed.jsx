@@ -99,12 +99,12 @@ export default function Feed() {
             const colors = [
             //   "bg-red-100 text-red-800 ring-red-300",
             //   "bg-yellow-100 text-yellow-800 ring-yellow-300",
-              "bg-green-100 text-green-800 ring-green-300",
+              // "bg-green-100 text-green-800 ring-green-300",
             //   "bg-blue-100 text-blue-800 ring-blue-300",
             //   "bg-purple-100 text-purple-800 ring-purple-300",
             //   "bg-pink-100 text-pink-800 ring-pink-300",
             //   "bg-indigo-100 text-indigo-800 ring-indigo-300",
-            //   "bg-gray-100 text-gray-800 ring-gray-300",
+              "bg-gray-100 text-gray-800 ring-gray-300",
             ];
             const badgeStyle = colors[index % colors.length];
             return (
