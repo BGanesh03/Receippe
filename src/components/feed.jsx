@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./feed.css";
 import { Icon, ThumbsUp, MessageCircle } from "lucide-react";
 
-export default function Feed() {
+export default function Feed({dish , ingredient , instruction }) {
   const [likes, setLikes] = useState(0);
   const [liked, setLiked] = useState(false);
   const increase = () => {
@@ -14,45 +14,7 @@ export default function Feed() {
     setLiked(!liked);
   };
 
-  const p =
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas at pariatur sunt" +
-    "nihil asperiores dolorum iusto laudantium! Obcaecati eum non voluptates accusantium laboriosam officiis" +
-    "autem eius, asperiores impedit eos fugit provident adipisci! Ab repellendus provident ipsum? Est quas nos" +
-    "trum quae exercitationem nisi illum, perferendis tempore reiciendis dolor, repellat doloremque" +
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas at pariatur sunt" +
-    "nihil asperiores dolorum iusto laudantium! Obcaecati eum non voluptates accusantium laboriosam officiis" +
-    "autem eius, asperiores impedit eos fugit provident adipisci! Ab repellendus provident ipsum? Est quas nos" +
-    "trum quae exercitationem nisi illum, perferendis tempore reiciendis dolor, repellat doloremque" +
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas at pariatur sunt" +
-    "nihil asperiores dolorum iusto laudantium! Obcaecati eum non voluptates accusantium laboriosam officiis" +
-    "autem eius, asperiores impedit eos fugit provident adipisci! Ab repellendus provident ipsum? Est quas nos" +
-    "trum quae exercitationem nisi illum, perferendis tempore reiciendis dolor, repellat doloremque";
-
-  const arr = [
-    "masala",
-    "vegetable",
-    "rice",
-    "oil",
-    "chicken",
-    "pepper",
-    "salt",
-    "turmeric",
-    "onion",
-    "garlic",
-    "ginger",
-    "tomato",
-    "potato",
-    "paneer",
-    "ghee",
-    "coriander",
-    "green chili",
-    "mustard seeds",
-    "cumin",
-    "curd",
-  ];
-
-  const name = "Mr.dot";
-
+  
   console.log(likes);
   return (
     <div className="main">
@@ -60,7 +22,7 @@ export default function Feed() {
         {/* put header for user name and profile */}
         <div className="head">
           {/* <img className="userima" src="./user.png" alt="" /> */}
-          <p className="user">{name}</p>
+          <p className="user">{dish}</p>
         </div>
 
         {/* To display the contents in the collection in image format */}
@@ -95,7 +57,7 @@ export default function Feed() {
       <div className="desc">
         <h1>Ingredients</h1>
         <div className="ingredients-container flex flex-wrap gap-2 mt-2">
-          {arr.map((item, index) => {
+          {ingredient.map((item, index) => {
             const colors = [
             //   "bg-red-100 text-red-800 ring-red-300",
             //   "bg-yellow-100 text-yellow-800 ring-yellow-300",
@@ -120,7 +82,7 @@ export default function Feed() {
 
         <br />
         <p style={{ paddingBottom: "15px" }}>Description</p>
-        <p style={{ paddingTop: "5px" }}>{p}</p>
+        <p style={{ paddingTop: "5px" }}>{instruction}</p>
       </div>
     </div>
   );

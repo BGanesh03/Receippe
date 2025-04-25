@@ -18,7 +18,7 @@ export default function Dash({ visible }) {
     <div className="dash">
       <ul>
         <li>About</li>
-        <li>User Profile</li>
+        <li onClick={()=>nav("/profile")}>User Profile</li>
         <li onClick={toggle}>Add Receipe</li>
         <Add visible1={showAdd}  setVisible1={setShowAdd}/>
         <li>Log Out</li>

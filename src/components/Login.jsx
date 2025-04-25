@@ -21,7 +21,7 @@ function Login(){
                 <h1>Login</h1>
                 <input type="text" placeholder='Enter mail/mobile'/>
                 <input type="password" placeholder='Enter password'/>
-                <button>Login</button>
+                <button onClick={()=>nav("/home")}>Login</button>
                 <div className='forget'>
                 <p className="link-button"> forget password</p>
                 <p>?</p>

@@ -1,22 +1,35 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import './home.css'
+import React, { use } from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar from './navbar';
+import Feed from './feed';
+import Dash from './dashb';
 
-function Profile() {
-  const user = {
-    name: 'John Doe',
-    email: 'john@example.com',
-    joined: '2024-01-10'
-  };
+function Profile(){
+   
+    return(
+        <div  style={{backgroundImage:"url('back1.jpg')",backgroundSize: "cover", /* Make image cover the whole page */
+            backgroundPosition: "center", /* Center the image */
+            backgroundRepeat : "no-repeat",
+            objectFit:"cover"}}>
+            <Navbar/>
+            <div className='search' >
+                <input type="text" placeholder='Search Receipes....'/>
+                {/* <i class=""></i> */}
+            </div>
+            <div className='feed'>
+            <Feed/>
+            <Feed/>
+            <Feed/>
+            <Feed/>
 
-  return (
-    <div style={{ padding: 20, backgroundColor: '#f5f6fa', minHeight: '100vh' }}>
-      <h2 style={{ color: '#2c3e50' }}>👤 User Profile</h2>
-      <p><strong>Name:</strong> {user.name}</p>
-      <p><strong>Email:</strong> {user.email}</p>
-      <p><strong>Joined:</strong> {user.joined}</p>
-      <Link to="/"><button style={{ marginTop: 20, padding: '8px 15px', backgroundColor: '#34495e', color: 'white', border: 'none', borderRadius: 5 }}>⬅ Back to Recipes</button></Link>
-    </div>
-  );
+            </div>
+            
+            <div className="">
+
+            </div>
+        </div>
+    )
 }
 
 export default Profile;
