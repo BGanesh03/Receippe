@@ -31,6 +31,10 @@ export default function Add({ visible1 , setVisible1}) {
     setImage(null);
     setSteps("");
 
+    ingredientArray.push("asdf");
+
+    console.log(ingredientArray)
+
     setVisible1(false)
 
   }
