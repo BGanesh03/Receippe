@@ -9,7 +9,7 @@ function Signup() {
     const [pw, setPw] = useState("");
     const [msg, setMsg] = useState("");
 
-    const apiurl = "http://localhost:8080";
+    const apiurl = "http://localhost:8080/profile";
     const nav = useNavigate();
 
     const handlesubmit = (e) => {

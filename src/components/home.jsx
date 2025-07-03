@@ -1,50 +1,28 @@
 import './home.css'
-import React, { use } from "react";
+import React, { use, useEffect, useState } from "react";
 import Navbar from './navbar';
 import Feed from './feed';
 import Dash from './dashb';
 
 function Home(){
+  const [receipe , setReceipe] = useState([]);
+  const [name, setName] = useState("");
+  const [ingredient, setIngredient] = useState("");
+  const [image, setImage] = useState();
+  const [steps, setSteps] = useState("");
+  const [msg, setMsg] = useState("");
 
-    const p =
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas at pariatur sunt" +
-    "nihil asperiores dolorum iusto laudantium! Obcaecati eum non voluptates accusantium laboriosam officiis" +
-    "autem eius, asperiores impedit eos fugit provident adipisci! Ab repellendus provident ipsum? Est quas nos" +
-    "trum quae exercitationem nisi illum, perferendis tempore reiciendis dolor, repellat doloremque" +
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas at pariatur sunt" +
-    "nihil asperiores dolorum iusto laudantium! Obcaecati eum non voluptates accusantium laboriosam officiis" +
-    "autem eius, asperiores impedit eos fugit provident adipisci! Ab repellendus provident ipsum? Est quas nos" +
-    "trum quae exercitationem nisi illum, perferendis tempore reiciendis dolor, repellat doloremque" +
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptas at pariatur sunt" +
-    "nihil asperiores dolorum iusto laudantium! Obcaecati eum non voluptates accusantium laboriosam officiis" +
-    "autem eius, asperiores impedit eos fugit provident adipisci! Ab repellendus provident ipsum? Est quas nos" +
-    "trum quae exercitationem nisi illum, perferendis tempore reiciendis dolor, repellat doloremque";
+  const apiurl = "http://localhost:8080";
 
-  const arr = [
-    "masala",
-    "vegetable",
-    "rice",
-    "oil",
-    "chicken",
-    "pepper",
-    "salt",
-    "turmeric",
-    "onion",
-    "garlic",
-    "ginger",
-    "tomato",
-    "potato",
-    "paneer",
-    "ghee",
-    "coriander",
-    "green chili",
-    "mustard seeds",
-    "cumin",
-    "curd",
-  ];
 
-  const name = "Mr.dot";
-
+  useEffect(()=>{
+    fetch(apiurl+"/receipes")
+        .then((res)=> res.json())
+        .then((res)=>{
+            setReceipe(res)
+        })
+  },[])
+  
     return(
         <div  style={{backgroundImage:"url('back1.jpg')",backgroundSize: "cover", /* Make image cover the whole page */
             backgroundPosition: "center", /* Center the image */
@@ -56,25 +34,18 @@ function Home(){
                 {/* <i class=""></i> */}
             </div>
             <div className='feed'>
-            <Feed 
-            dish={name}
-            ingredient={arr}
-            instruction={p}
-            />
-            <Feed 
-            dish={name}
-            ingredient={arr}
-            instruction={p}
-            />
-            <Feed 
-            dish={name}
-            ingredient={arr}
-            instruction={p}
-            />
+            
             </div>
             
             <div className="">
-
+            {receipe.map((item, index) => (
+  <Feed 
+    key={index}
+    dish={item.name}
+    ingredient={item.ingredient.split(" ")}  // turn space-separated string into array
+    instruction={item.steps}
+  />
+))}
             </div>
         </div>
     )
